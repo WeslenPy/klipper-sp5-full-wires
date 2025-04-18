@@ -1,0 +1,720 @@
+-------------------- Log Start | Fri Apr 18 00:17:18 2025 --------------------
+platform: Linux-6.1.31-sun50iw9-aarch64-with-glibc2.36
+data_path: /home/orangepi/printer_data
+is_default_data_path: False
+config_file: /home/orangepi/printer_data/config/moonraker.conf
+backup_config: /home/orangepi/printer_data/config/.moonraker.conf.bkp
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: 5af212cc30e7485386a4ab7e3f974fdf
+unix_socket_path: /home/orangepi/printer_data/comms/moonraker.sock
+structured_logging: False
+software_version: v0.9.3-72-g7cdcca3
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker
+modified_files: []
+unofficial_components: []
+log_file: /home/orangepi/printer_data/logs/moonraker.log
+python_version: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+launch_args: /home/orangepi/moonraker-env/bin/python /home/orangepi/moonraker/moonraker/moonraker.py -d /home/orangepi/printer_data
+msgspec_enabled: True
+uvloop_enabled: True
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/orangepi/printer_data/comms/klippy.sock
+
+[file_manager]
+enable_object_processing = True
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/16
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager klipper_tmc_autotune]
+type = git_repo
+channel = dev
+path = ~/klipper_tmc_autotune
+origin = https://github.com/andrewmcgr/klipper_tmc_autotune.git
+managed_services = klipper
+primary_branch = main
+install_script = install.sh
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager Klippain-ShakeTune]
+type = git_repo
+origin = https://github.com/Frix-x/klippain-shaketune.git
+path = ~/klippain_shaketune
+virtualenv = /home/orangepi/klippy-env
+requirements = requirements.txt
+system_dependencies = system-dependencies.json
+primary_branch = main
+managed_services = klipper
+
+[update_manager klipper_auto_speed]
+type = git_repo
+path = ~/klipper_auto_speed
+origin = https://github.com/anonoei/klipper_auto_speed.git
+primary_branch = main
+install_script = install.sh
+managed_services = klipper
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+#################################################################
+All Configuration Files:
+/home/orangepi/printer_data/config/moonraker.conf
+#################################################################
+2025-04-18 00:17:18,160 [confighelper.py:read_file()] - Configuration File '/home/orangepi/printer_data/config/moonraker.conf' parsed, total size: 1729 B
+2025-04-18 00:17:18,160 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/orangepi/printer_data/comms/klippy.sock
+
+[file_manager]
+enable_object_processing = True
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/16
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager klipper_tmc_autotune]
+type = git_repo
+channel = dev
+path = ~/klipper_tmc_autotune
+origin = https://github.com/andrewmcgr/klipper_tmc_autotune.git
+managed_services = klipper
+primary_branch = main
+install_script = install.sh
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager Klippain-ShakeTune]
+type = git_repo
+origin = https://github.com/Frix-x/klippain-shaketune.git
+path = ~/klippain_shaketune
+virtualenv = /home/orangepi/klippy-env
+requirements = requirements.txt
+system_dependencies = system-dependencies.json
+primary_branch = main
+managed_services = klipper
+
+[update_manager klipper_auto_speed]
+type = git_repo
+path = ~/klipper_auto_speed
+origin = https://github.com/anonoei/klipper_auto_speed.git
+primary_branch = main
+install_script = install.sh
+managed_services = klipper
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+#################################################################
+All Configuration Files:
+/home/orangepi/printer_data/config/moonraker.conf
+#################################################################
+2025-04-18 00:17:19,274 [server.py:load_component()] - Component (secrets) loaded
+2025-04-18 00:17:19,304 [server.py:load_component()] - Component (template) loaded
+2025-04-18 00:17:19,316 [server.py:load_component()] - Component (klippy_connection) loaded
+2025-04-18 00:17:21,511 [server.py:load_component()] - Component (application) loaded
+2025-04-18 00:17:21,553 [server.py:load_component()] - Component (websockets) loaded
+2025-04-18 00:17:21,589 [server.py:add_log_rollover_item()] - Loading Sqlite database provider. Sqlite Version: 3.40.1
+2025-04-18 00:17:21,594 [server.py:add_log_rollover_item()] - Unsafe Shutdown Count: 4
+2025-04-18 00:17:21,598 [server.py:load_component()] - Component (database) loaded
+2025-04-18 00:17:21,845 [server.py:load_component()] - Component (dbus_manager) loaded
+2025-04-18 00:17:21,897 [file_manager.py:__init__()] - Using File System Observer: inotify
+2025-04-18 00:17:21,954 [server.py:load_component()] - Component (file_manager) loaded
+2025-04-18 00:17:21,996 [database.py:register_table()] - Found registered table authorized_users
+2025-04-18 00:17:21,999 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/16
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2025-04-18 00:17:22,003 [server.py:load_component()] - Component (authorization) loaded
+2025-04-18 00:17:22,010 [server.py:load_component()] - Component (klippy_apis) loaded
+2025-04-18 00:17:22,340 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: aarch64
+  cpu_desc: 
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 1005428
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {'name': '# PLEASE DO NOT EDIT THIS FILE', 'id': 'orangepi'}
+  kernel_version: 6.1.31-sun50iw9
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+2025-04-18 00:17:22,345 [server.py:load_component()] - Component (shell_command) loaded
+2025-04-18 00:17:22,345 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2025-04-18 00:17:22,356 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2025-04-18 00:17:22,356 [server.py:load_component()] - Component (machine) loaded
+2025-04-18 00:17:22,362 [server.py:load_component()] - Component (data_store) loaded
+2025-04-18 00:17:22,367 [proc_stats.py:__init__()] - Unable to find 'vcgencmd', throttle checking disabled
+2025-04-18 00:17:22,369 [server.py:load_component()] - Component (proc_stats) loaded
+2025-04-18 00:17:22,371 [server.py:load_component()] - Component (job_state) loaded
+2025-04-18 00:17:22,379 [server.py:load_component()] - Component (job_queue) loaded
+2025-04-18 00:17:22,395 [database.py:register_table()] - Found registered table job_history
+2025-04-18 00:17:22,396 [database.py:register_table()] - Found registered table job_totals
+2025-04-18 00:17:22,399 [server.py:load_component()] - Component (history) loaded
+2025-04-18 00:17:22,420 [server.py:load_component()] - Component (http_client) loaded
+2025-04-18 00:17:22,429 [server.py:load_component()] - Component (announcements) loaded
+2025-04-18 00:17:22,439 [server.py:load_component()] - Component (webcam) loaded
+2025-04-18 00:17:22,446 [server.py:load_component()] - Component (extensions) loaded
+2025-04-18 00:17:22,589 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/orangepi/moonraker-env
+2025-04-18 00:17:22,594 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/orangepi/klippy-env
+2025-04-18 00:17:22,604 [base_deploy.py:log_info()] - Git Repo Klippain-ShakeTune: Detected virtualenv: /home/orangepi/klippy-env
+2025-04-18 00:17:22,617 [server.py:load_component()] - Component (update_manager) loaded
+2025-04-18 00:17:22,626 [server.py:load_component()] - Component (octoprint_compat) loaded
+2025-04-18 00:17:22,627 [server.py:_initialize_component()] - Performing Component Post Init: [database]
+2025-04-18 00:17:22,652 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2025-04-18 00:17:22,817 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2025-04-18 00:17:22,819 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2025-04-18 00:17:22,821 [machine.py:validation_init()] - Installation version in database up to date
+2025-04-18 00:17:23,250 [machine.py:check_virt_status()] - No Virtualization Detected
+2025-04-18 00:17:23,277 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.115
+2025-04-18 00:17:23,280 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.115
+2025-04-18 00:17:23,353 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'network-online.target', 'sysinit.target']
+**After=['systemd-journald.socket', 'basic.target', 'system.slice', 'sysinit.target', '-.mount', 'network-online.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/orangepi/printer_data/systemd/moonraker.env
+**ExecStart=/home/orangepi/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/orangepi/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=orangepi
+2025-04-18 00:17:23,354 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2025-04-18 00:17:23,354 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2025-04-18 00:17:23,363 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2025-04-18 00:17:23,372 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2025-04-18 00:17:23,372 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.115
+2025-04-18 00:17:23,398 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2025-04-18 00:17:23,399 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['sysinit.target', '-.mount', 'network-online.target', 'system.slice', 'systemd-journald.socket', 'basic.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/orangepi/printer_data/systemd/klipper.env
+**ExecStart=/home/orangepi/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/orangepi/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=orangepi
+2025-04-18 00:17:23,399 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2025-04-18 00:17:23,864 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2025-04-18 00:17:23,867 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/orangepi/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker
+Recovery URL: https://github.com/Arksine/moonraker
+Current Commit SHA: 7cdcca3cb4b7caf27d511d1c4e32fa3297391709
+Upstream Commit SHA: 7cdcca3cb4b7caf27d511d1c4e32fa3297391709
+Current Version: v0.9.3-72-g7cdcca3c
+Upstream Version: v0.9.3-72-g7cdcca3c
+Rollback Commit: 7cdcca3cb4b7caf27d511d1c4e32fa3297391709
+Rollback Branch: master
+Rollback Version: v0.9.3-72-g7cdcca3c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-04-18 00:17:23,870 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/orangepi/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 413ff19ea8e0e5e09c0233225ffa8ad07b1233d6
+Upstream Commit SHA: 413ff19ea8e0e5e09c0233225ffa8ad07b1233d6
+Current Version: v0.13.0-33-g413ff19e
+Upstream Version: v0.13.0-33-g413ff19e
+Rollback Commit: 413ff19ea8e0e5e09c0233225ffa8ad07b1233d6
+Rollback Branch: master
+Rollback Version: v0.13.0-33-g413ff19e
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-04-18 00:17:23,874 [git_deploy.py:log_repo_info()] - Git Repo klipper_tmc_autotune Detected:
+Owner: andrewmcgr
+Repository Name: klipper_tmc_autotune
+Path: /home/orangepi/klipper_tmc_autotune
+Remote: origin
+Branch: main
+Remote URL: https://github.com/andrewmcgr/klipper_tmc_autotune.git
+Recovery URL: https://github.com/andrewmcgr/klipper_tmc_autotune.git
+Current Commit SHA: 03b49374d71fde201718f033843d687de8fe9de8
+Upstream Commit SHA: 03b49374d71fde201718f033843d687de8fe9de8
+Current Version: v0.2.0-241-g03b49374
+Upstream Version: v0.2.0-241-g03b49374
+Rollback Commit: 03b49374d71fde201718f033843d687de8fe9de8
+Rollback Branch: main
+Rollback Version: v0.2.0-241-g03b49374
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-04-18 00:17:23,878 [git_deploy.py:log_repo_info()] - Git Repo Klipper-Adaptive-Meshing-Purging Detected:
+Owner: kyleisah
+Repository Name: Klipper-Adaptive-Meshing-Purging
+Path: /home/orangepi/Klipper-Adaptive-Meshing-Purging
+Remote: origin
+Branch: main
+Remote URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Recovery URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Current Commit SHA: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Upstream Commit SHA: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Current Version: v1.1.2-13-gb0dad8ec
+Upstream Version: v1.1.2-13-gb0dad8ec
+Rollback Commit: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Rollback Branch: main
+Rollback Version: v1.1.2-13-gb0dad8ec
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-04-18 00:17:23,883 [git_deploy.py:log_repo_info()] - Git Repo Klippain-ShakeTune Detected:
+Owner: Frix-x
+Repository Name: klippain-shaketune
+Path: /home/orangepi/klippain_shaketune
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Frix-x/klippain-shaketune.git
+Recovery URL: https://github.com/Frix-x/klippain-shaketune.git
+Current Commit SHA: d59da30ae568706335d10563338dd11e15e74889
+Upstream Commit SHA: d59da30ae568706335d10563338dd11e15e74889
+Current Version: v5.1.1-0-gd59da30a
+Upstream Version: v5.1.1-0-gd59da30a
+Rollback Commit: d59da30ae568706335d10563338dd11e15e74889
+Rollback Branch: main
+Rollback Version: v5.1.1-0-gd59da30a
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-04-18 00:17:23,889 [git_deploy.py:log_repo_info()] - Git Repo klipper_auto_speed Detected:
+Owner: Anonoei
+Repository Name: klipper_auto_speed
+Path: /home/orangepi/klipper_auto_speed
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Anonoei/klipper_auto_speed.git
+Recovery URL: https://github.com/Anonoei/klipper_auto_speed.git
+Current Commit SHA: 63315317c465edc135e4712e4327de5b8b852082
+Upstream Commit SHA: 63315317c465edc135e4712e4327de5b8b852082
+Current Version: v0.3.4-11-g63315317
+Upstream Version: v0.3.4-11-g63315317
+Rollback Commit: 63315317c465edc135e4712e4327de5b8b852082
+Rollback Branch: main
+Rollback Version: v0.3.4-11-g63315317
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-04-18 00:17:23,892 [git_deploy.py:log_repo_info()] - Git Repo klipper-backup Detected:
+Owner: Staubgeborener
+Repository Name: klipper-backup
+Path: /home/orangepi/klipper-backup
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Staubgeborener/klipper-backup.git
+Recovery URL: https://github.com/Staubgeborener/klipper-backup.git
+Current Commit SHA: f9e74250f41d98af78837520a856bd49c4e85ad1
+Upstream Commit SHA: f9e74250f41d98af78837520a856bd49c4e85ad1
+Current Version: v1.3.3-5-gf9e74250
+Upstream Version: v1.3.3-5-gf9e74250
+Rollback Commit: f9e74250f41d98af78837520a856bd49c4e85ad1
+Rollback Branch: main
+Rollback Version: v1.3.3-5-gf9e74250
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-04-18 00:17:23,893 [base_deploy.py:log_info()] - PackageKit: Next refresh in: 6 Days, 18 Hours, 56 Minutes, 55 Seconds
+2025-04-18 00:17:23,893 [base_deploy.py:log_info()] - Git Repo moonraker: Next refresh in: 6 Days, 18 Hours, 56 Minutes, 56 Seconds
+2025-04-18 00:17:23,893 [base_deploy.py:log_info()] - Git Repo klipper: Next refresh in: 6 Days, 18 Hours, 56 Minutes, 58 Seconds
+2025-04-18 00:17:23,893 [base_deploy.py:log_info()] - Git Repo klipper_tmc_autotune: Next refresh in: 6 Days, 20 Hours, 36 Minutes, 20 Seconds
+2025-04-18 00:17:23,893 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Next refresh in: 6 Days, 20 Hours, 36 Minutes, 22 Seconds
+2025-04-18 00:17:23,894 [base_deploy.py:log_info()] - Git Repo Klippain-ShakeTune: Next refresh in: 6 Days, 20 Hours, 36 Minutes, 24 Seconds
+2025-04-18 00:17:23,894 [base_deploy.py:log_info()] - Git Repo klipper_auto_speed: Next refresh in: 6 Days, 20 Hours, 39 Minutes, 16 Seconds
+2025-04-18 00:17:23,894 [base_deploy.py:log_info()] - Git Repo klipper-backup: Next refresh in: 6 Days, 20 Hours, 39 Minutes, 17 Seconds
+2025-04-18 00:17:23,939 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/orangepi/printer_data/comms/moonraker.sock'
+2025-04-18 00:17:23,940 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: orangepizero3
+2025-04-18 00:17:23,942 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2025-04-18 00:17:24,195 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-04-18 00:17:24,268 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['sysinit.target', 'systemd-journald.socket', 'system.slice', 'basic.target', 'network-online.target', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/orangepi/printer_data/systemd/klipper.env
+**ExecStart=/home/orangepi/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/orangepi/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=orangepi
+2025-04-18 00:17:24,522 [server.py:add_log_rollover_item()] - Klipper Version: v0.13.0-33-g413ff19e-dirty
+2025-04-18 00:17:24,539 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-04-18 00:17:24,541 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-04-18 00:17:24,543 [klippy_connection.py:_check_ready()] - 
+Option 'control' in section 'extruder' must be specified
+
+Once the underlying issue is corrected, use the "RESTART"
+command to reload the config and restart the host software.
+Printer is halted
+
+2025-04-18 00:17:27,865 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-04-18 00:17:27,881 [application.py:log_request()] - 101 GET /websocket?token= (127.0.0.1) [_TRUSTED_USER_] 4.83ms
+2025-04-18 00:17:27,882 [websockets.py:open()] - Websocket Opened: ID: 281473641905360, Proxied: False, User Agent: , Host Name: 127.0.0.1
+2025-04-18 00:17:27,967 [websockets.py:_handle_identify()] - Websocket 281473641905360 Client Identified - Name: KlipperScreen, Version: v0.4.5-57-g2916c9f, Type: display
+2025-04-18 00:17:43,436 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffffb06cf1a0>, <Task finished name='Task-12' coro=<_HTTPConnection.run() done, defined at /home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-2, 'Name or service not known')>)
+Traceback (most recent call last):
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+                                               ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1529, in getaddrinfo
+socket.gaierror: [Errno -2] Name or service not known
+2025-04-18 00:17:48,921 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffffb054a0c0>, <Task finished name='Task-81' coro=<_HTTPConnection.run() done, defined at /home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-2, 'Name or service not known')>)
+Traceback (most recent call last):
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+                                               ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1529, in getaddrinfo
+socket.gaierror: [Errno -2] Name or service not known
+2025-04-18 00:17:50,409 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
+2025-04-18 00:18:03,454 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffffb0549e40>, <Task finished name='Task-113' coro=<_HTTPConnection.run() done, defined at /home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-2, 'Name or service not known')>)
+Traceback (most recent call last):
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+                                               ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1529, in getaddrinfo
+socket.gaierror: [Errno -2] Name or service not known
+2025-04-18 00:18:13,947 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffffb054a200>, <Task finished name='Task-138' coro=<_HTTPConnection.run() done, defined at /home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-2, 'Name or service not known')>)
+Traceback (most recent call last):
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+                                               ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1529, in getaddrinfo
+socket.gaierror: [Errno -2] Name or service not known
+2025-04-18 00:18:17,422 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': Timeout while connecting
+2025-04-18 00:18:23,468 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffffb06d9440>, <Task finished name='Task-170' coro=<_HTTPConnection.run() done, defined at /home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-2, 'Name or service not known')>)
+Traceback (most recent call last):
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+                                               ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1529, in getaddrinfo
+socket.gaierror: [Errno -2] Name or service not known
+2025-04-18 00:18:33,966 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffffb06db6a0>, <Task finished name='Task-194' coro=<_HTTPConnection.run() done, defined at /home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-2, 'Name or service not known')>)
+Traceback (most recent call last):
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+                                               ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1529, in getaddrinfo
+socket.gaierror: [Errno -2] Name or service not known
+2025-04-18 00:18:43,480 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffffb06db560>, <Task finished name='Task-222' coro=<_HTTPConnection.run() done, defined at /home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-2, 'Name or service not known')>)
+Traceback (most recent call last):
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+                                               ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1529, in getaddrinfo
+socket.gaierror: [Errno -2] Name or service not known
+2025-04-18 00:18:53,988 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffffb06db100>, <Task finished name='Task-248' coro=<_HTTPConnection.run() done, defined at /home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-2, 'Name or service not known')>)
+Traceback (most recent call last):
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+                                               ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1529, in getaddrinfo
+socket.gaierror: [Errno -2] Name or service not known
+2025-04-18 00:19:03,498 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffffb06db920>, <Task finished name='Task-278' coro=<_HTTPConnection.run() done, defined at /home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-2, 'Name or service not known')>)
+Traceback (most recent call last):
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+                                               ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1529, in getaddrinfo
+socket.gaierror: [Errno -2] Name or service not known
+2025-04-18 00:19:14,009 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffffb06daac0>, <Task finished name='Task-304' coro=<_HTTPConnection.run() done, defined at /home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-2, 'Name or service not known')>)
+Traceback (most recent call last):
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+                                               ^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/orangepi/moonraker-env/lib/python3.11/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1529, in getaddrinfo
+socket.gaierror: [Errno -2] Name or service not known

@@ -1,0 +1,1054 @@
+2025-04-17 19:29:43,381 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2025-04-17 19:29:43,381 [functions.py:log_start()] - KlipperScreen Version: v0.4.5-57-g2916c9f
+2025-04-17 19:29:43,381 [functions.py:log_start()] - Python version: 3.11
+2025-04-17 19:29:43,525 [config.py:get_config_file_location()] - Passed config (-c): .
+2025-04-17 19:29:43,526 [config.py:__init__()] - Config path location: /home/orangepi/KlipperScreen/config/defaults.conf
+2025-04-17 19:29:43,528 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/main_menu.conf']
+2025-04-17 19:29:43,539 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/splash_menu.conf']
+2025-04-17 19:29:43,543 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/print_menu.conf']
+2025-04-17 19:29:43,550 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/move_menu.conf']
+2025-04-17 19:29:43,556 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_path": "",
+      "moonraker_ssl": null,
+      "moonraker_api_key": ""
+    }
+  }
+]
+2025-04-17 19:29:43,683 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2025-04-17 19:29:43,683 [config.py:install_language()] - Using lang en
+2025-04-17 19:29:43,707 [screen.py:__init__()] - Display for xset: :0
+2025-04-17 19:29:43,709 [screen.py:__init__()] - Screen 0: 2560x1080
+2025-04-17 19:29:43,709 [screen.py:__init__()] - Monitors: 1 using number: 0
+2025-04-17 19:29:43,709 [screen.py:__init__()] - Wayland: False Display name: :0
+2025-04-17 19:29:43,711 [screen.py:__init__()] - Screen resolution: 2560x1080
+2025-04-17 19:29:43,930 [KlippyGtk.py:__init__()] - Font size: 40.0 (medium)
+2025-04-17 19:29:44,385 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 19:29:44,570 [config.py:save_user_config_options()] - Creating a new config file in /home/orangepi/printer_data/config/KlipperScreen.conf
+2025-04-17 19:29:44,605 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2025-04-17 19:29:44,605 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2025-04-17 19:29:44,606 [screen.py:initial_connection()] - Default printer: None
+2025-04-17 19:29:44,705 [screen.py:connect_printer()] - Connecting to printer: Printer
+2025-04-17 19:29:44,706 [screen.py:_remove_all_panels()] - Removing all panels
+2025-04-17 19:29:44,794 [screen.py:_load_panel()] - Loading panel: splash_screen
+2025-04-17 19:29:44,882 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2025-04-17 19:29:44,915 [KlippyWebsocket.py:connect()] - Attempting to connect
+2025-04-17 19:29:44,915 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2025-04-17 19:29:44,927 [_logging.py:info()] - Websocket connected
+2025-04-17 19:29:44,928 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2025-04-17 19:29:45,010 [screen.py:websocket_connected()] - ### websocket_connected
+2025-04-17 19:29:45,046 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2025-04-17 19:29:45,059 [printer.py:configure_cameras()] - Cameras: []
+2025-04-17 19:29:45,070 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 19:29:45,147 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e
+2025-04-17 19:29:45,148 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 19:29:45,148 [printer.py:log_counts()] - # Temperature devices: 0
+2025-04-17 19:29:45,148 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 19:29:45,148 [printer.py:log_counts()] - # Output pins: 0
+2025-04-17 19:29:45,148 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 19:29:45,148 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 19:29:45,399 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 19:29:45,400 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 19:29:45,401 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 19:29:45,401 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 19:29:45,401 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 19:29:45,425 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2025-04-17 19:29:45,426 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2025-04-17 19:29:45,426 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 19:30:44,438 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 20:09:22,700 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2025-04-17 20:09:22,700 [functions.py:log_start()] - KlipperScreen Version: v0.4.5-57-g2916c9f
+2025-04-17 20:09:22,700 [functions.py:log_start()] - Python version: 3.11
+2025-04-17 20:09:22,898 [config.py:get_config_file_location()] - Passed config (-c): .
+2025-04-17 20:09:22,899 [config.py:__init__()] - Config path location: /home/orangepi/printer_data/config/KlipperScreen.conf
+2025-04-17 20:09:22,902 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/main_menu.conf']
+2025-04-17 20:09:22,913 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/splash_menu.conf']
+2025-04-17 20:09:22,917 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/print_menu.conf']
+2025-04-17 20:09:22,925 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/move_menu.conf']
+2025-04-17 20:09:22,934 [config.py:log_config()] - ===== Config File =====
+
+=======================
+2025-04-17 20:09:22,935 [config.py:__init__()] - ====== Saved Def ======
+
+
+
+=======================
+2025-04-17 20:09:22,936 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_path": "",
+      "moonraker_ssl": null,
+      "moonraker_api_key": ""
+    }
+  }
+]
+2025-04-17 20:09:23,084 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2025-04-17 20:09:23,085 [config.py:install_language()] - Using lang en
+2025-04-17 20:09:23,108 [screen.py:__init__()] - Display for xset: :0
+2025-04-17 20:09:23,110 [screen.py:__init__()] - Screen 0: 800x480
+2025-04-17 20:09:23,110 [screen.py:__init__()] - Monitors: 1 using number: 0
+2025-04-17 20:09:23,110 [screen.py:__init__()] - Wayland: False Display name: :0
+2025-04-17 20:09:23,112 [screen.py:__init__()] - Screen resolution: 800x480
+2025-04-17 20:09:23,321 [KlippyGtk.py:__init__()] - Font size: 17.8 (medium)
+2025-04-17 20:09:23,983 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 20:09:24,300 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2025-04-17 20:09:24,300 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2025-04-17 20:09:24,301 [screen.py:initial_connection()] - Default printer: None
+2025-04-17 20:09:24,404 [screen.py:connect_printer()] - Connecting to printer: Printer
+2025-04-17 20:09:24,404 [screen.py:_remove_all_panels()] - Removing all panels
+2025-04-17 20:09:24,490 [screen.py:_load_panel()] - Loading panel: splash_screen
+2025-04-17 20:09:24,554 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2025-04-17 20:09:24,588 [KlippyWebsocket.py:connect()] - Attempting to connect
+2025-04-17 20:09:24,588 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2025-04-17 20:09:24,600 [_logging.py:info()] - Websocket connected
+2025-04-17 20:09:24,600 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2025-04-17 20:09:24,640 [screen.py:websocket_connected()] - ### websocket_connected
+2025-04-17 20:09:24,677 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2025-04-17 20:09:24,690 [printer.py:configure_cameras()] - Cameras: []
+2025-04-17 20:09:24,701 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 20:09:24,727 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e
+2025-04-17 20:09:24,728 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 20:09:24,728 [printer.py:log_counts()] - # Temperature devices: 0
+2025-04-17 20:09:24,728 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 20:09:24,728 [printer.py:log_counts()] - # Output pins: 0
+2025-04-17 20:09:24,728 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 20:09:24,728 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 20:09:24,979 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 20:09:24,980 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 20:09:24,980 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 20:09:24,981 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2025-04-17 20:09:24,981 [printer.py:change_state()] - Adding callback for state: startup
+2025-04-17 20:09:25,004 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2025-04-17 20:09:25,005 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2025-04-17 20:10:24,327 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 20:10:45,952 [printer.py:change_state()] - Changing state from 'startup' to 'error'
+2025-04-17 20:10:45,952 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 20:10:45,996 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2025-04-17 20:10:45,997 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2025-04-17 20:10:45,997 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:48:18,973 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2025-04-17 20:48:18,974 [functions.py:log_start()] - KlipperScreen Version: v0.4.5-57-g2916c9f
+2025-04-17 20:48:18,974 [functions.py:log_start()] - Python version: 3.11
+2025-04-17 20:48:19,173 [config.py:get_config_file_location()] - Passed config (-c): .
+2025-04-17 20:48:19,173 [config.py:__init__()] - Config path location: /home/orangepi/printer_data/config/KlipperScreen.conf
+2025-04-17 20:48:19,176 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/main_menu.conf']
+2025-04-17 20:48:19,187 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/splash_menu.conf']
+2025-04-17 20:48:19,191 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/print_menu.conf']
+2025-04-17 20:48:19,199 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/move_menu.conf']
+2025-04-17 20:48:19,208 [config.py:log_config()] - ===== Config File =====
+
+=======================
+2025-04-17 20:48:19,209 [config.py:__init__()] - ====== Saved Def ======
+
+[main]
+print_estimate_method = slicer
+screen_blanking = 1800
+screen_blanking_printing = 1800
+confirm_estop = True
+
+=======================
+2025-04-17 20:48:19,210 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_path": "",
+      "moonraker_ssl": null,
+      "moonraker_api_key": ""
+    }
+  }
+]
+2025-04-17 20:48:19,360 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2025-04-17 20:48:19,360 [config.py:install_language()] - Using lang en
+2025-04-17 20:48:19,384 [screen.py:__init__()] - Display for xset: :0
+2025-04-17 20:48:19,385 [screen.py:__init__()] - Screen 0: 800x480
+2025-04-17 20:48:19,385 [screen.py:__init__()] - Monitors: 1 using number: 0
+2025-04-17 20:48:19,386 [screen.py:__init__()] - Wayland: False Display name: :0
+2025-04-17 20:48:19,388 [screen.py:__init__()] - Screen resolution: 800x480
+2025-04-17 20:48:19,596 [KlippyGtk.py:__init__()] - Font size: 17.8 (medium)
+2025-04-17 20:48:20,301 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 20:48:20,613 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:48:20,614 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:48:20,614 [screen.py:initial_connection()] - Default printer: None
+2025-04-17 20:48:20,712 [screen.py:connect_printer()] - Connecting to printer: Printer
+2025-04-17 20:48:20,713 [screen.py:_remove_all_panels()] - Removing all panels
+2025-04-17 20:48:20,798 [screen.py:_load_panel()] - Loading panel: splash_screen
+2025-04-17 20:48:20,863 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2025-04-17 20:48:20,897 [KlippyWebsocket.py:connect()] - Attempting to connect
+2025-04-17 20:48:20,898 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2025-04-17 20:48:20,909 [_logging.py:info()] - Websocket connected
+2025-04-17 20:48:20,910 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2025-04-17 20:48:20,950 [screen.py:websocket_connected()] - ### websocket_connected
+2025-04-17 20:48:20,987 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2025-04-17 20:48:20,991 [screen.py:show_popup_message()] - warning: 
+Moonraker warnings:
+[update_manager]:
+ Failed to load extension fluidd:
+ Invalid path for option `path` in section [update_manager fluidd]:
+ Path `/home/orangepi/fluidd` does not exist
+[update_manager]:
+ Failed to load extension fluidd-config:
+ Invalid path for option `path` in section [update_manager fluidd-config]:
+ Path `/home/orangepi/fluidd-config` does not exist
+[update_manager]:
+ Failed to load extension klipper_tmc_autotune:
+ Invalid path for option `path` in section [update_manager klipper_tmc_autotune]:
+ Path `/home/orangepi/klipper_tmc_autotune` does not exist
+[update_manager]:
+ Failed to load extension Klipper-Adaptive-Meshing-Purging:
+ Invalid path for option `path` in section [update_manager Klipper-Adaptive-Meshing-Purging]:
+ Path `/home/orangepi/Klipper-Adaptive-Meshing-Purging` does not exist
+[update_manager]:
+ Failed to load extension Klippain-ShakeTune:
+ Invalid path for option `path` in section [update_manager Klippain-ShakeTune]:
+ Path `/home/orangepi/klippain_shaketune` does not exist
+[update_manager]:
+ Failed to load extension klipper_auto_speed:
+ Invalid path for option `path` in section [update_manager klipper_auto_speed]:
+ Path `/home/orangepi/klipper_auto_speed` does not exist
+[update_manager]:
+ Failed to load extension klipper-backup:
+ Invalid path for option `path` in section [update_manager klipper-backup]:
+ Path `/home/orangepi/klipper-backup` does not exist
+Unparsed config option 'repo:
+ fluidd-core/fluidd' detected in section [update_manager fluidd].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'managed_services:
+ klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'origin:
+ https:
+//github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'primary_branch:
+ master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'origin:
+ https:
+//github.com/andrewmcgr/klipper_tmc_autotune.git' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'managed_services:
+ klipper' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'primary_branch:
+ main' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'install_script:
+ install.sh' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'origin:
+ https:
+//github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git' detected in section [update_manager Klipper-Adaptive-Meshing-Purging].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'managed_services:
+ klipper' detected in section [update_manager Klipper-Adaptive-Meshing-Purging].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'primary_branch:
+ main' detected in section [update_manager Klipper-Adaptive-Meshing-Purging].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'origin:
+ https:
+//github.com/Frix-x/klippain-shaketune.git' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'virtualenv:
+ /home/orangepi/klippy-env' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'requirements:
+ requirements.txt' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'system_dependencies:
+ system-dependencies.json' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'primary_branch:
+ main' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'managed_services:
+ klipper' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'origin:
+ https:
+//github.com/anonoei/klipper_auto_speed.git' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'primary_branch:
+ main' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'install_script:
+ install.sh' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'managed_services:
+ klipper' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'origin:
+ https:
+//github.com/Staubgeborener/klipper-backup.git' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'managed_services:
+ moonraker' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'primary_branch:
+ main' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+
+2025-04-17 20:48:21,010 [printer.py:configure_cameras()] - Cameras: []
+2025-04-17 20:48:21,022 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': ['[update_manager]: Failed to load extension fluidd: Invalid path for option `path` in section [update_manager fluidd]: Path `/home/orangepi/fluidd` does not exist', '[update_manager]: Failed to load extension fluidd-config: Invalid path for option `path` in section [update_manager fluidd-config]: Path `/home/orangepi/fluidd-config` does not exist', '[update_manager]: Failed to load extension klipper_tmc_autotune: Invalid path for option `path` in section [update_manager klipper_tmc_autotune]: Path `/home/orangepi/klipper_tmc_autotune` does not exist', '[update_manager]: Failed to load extension Klipper-Adaptive-Meshing-Purging: Invalid path for option `path` in section [update_manager Klipper-Adaptive-Meshing-Purging]: Path `/home/orangepi/Klipper-Adaptive-Meshing-Purging` does not exist', '[update_manager]: Failed to load extension Klippain-ShakeTune: Invalid path for option `path` in section [update_manager Klippain-ShakeTune]: Path `/home/orangepi/klippain_shaketune` does not exist', '[update_manager]: Failed to load extension klipper_auto_speed: Invalid path for option `path` in section [update_manager klipper_auto_speed]: Path `/home/orangepi/klipper_auto_speed` does not exist', '[update_manager]: Failed to load extension klipper-backup: Invalid path for option `path` in section [update_manager klipper-backup]: Path `/home/orangepi/klipper-backup` does not exist', "Unparsed config option 'repo: fluidd-core/fluidd' detected in section [update_manager fluidd].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/andrewmcgr/klipper_tmc_autotune.git' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'install_script: install.sh' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git' detected in section [update_manager Klipper-Adaptive-Meshing-Purging].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager Klipper-Adaptive-Meshing-Purging].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager Klipper-Adaptive-Meshing-Purging].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/Frix-x/klippain-shaketune.git' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'virtualenv: /home/orangepi/klippy-env' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'requirements: requirements.txt' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'system_dependencies: system-dependencies.json' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/anonoei/klipper_auto_speed.git' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'install_script: install.sh' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/Staubgeborener/klipper-backup.git' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: moonraker' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error."], 'websocket_count': 1, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 20:48:21,115 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e
+2025-04-17 20:48:21,116 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 20:48:21,116 [printer.py:log_counts()] - # Temperature devices: 0
+2025-04-17 20:48:21,116 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 20:48:21,116 [printer.py:log_counts()] - # Output pins: 0
+2025-04-17 20:48:21,116 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 20:48:21,116 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 20:48:21,366 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 20:48:21,367 [files.py:set_gcodes_path()] - Gcodes path: None
+2025-04-17 20:48:21,367 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 20:48:21,367 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 20:48:21,368 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 20:48:23,058 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:48:23,059 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:48:23,059 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:49:20,421 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 20:51:00,396 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 20:51:00,398 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 20:51:00,422 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:51:00,423 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:51:00,423 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 20:51:00,423 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:51:04,446 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': ['[update_manager]: Failed to load extension fluidd: Invalid path for option `path` in section [update_manager fluidd]: Path `/home/orangepi/fluidd` does not exist', '[update_manager]: Failed to load extension fluidd-config: Invalid path for option `path` in section [update_manager fluidd-config]: Path `/home/orangepi/fluidd-config` does not exist', '[update_manager]: Failed to load extension klipper_tmc_autotune: Invalid path for option `path` in section [update_manager klipper_tmc_autotune]: Path `/home/orangepi/klipper_tmc_autotune` does not exist', '[update_manager]: Failed to load extension Klipper-Adaptive-Meshing-Purging: Invalid path for option `path` in section [update_manager Klipper-Adaptive-Meshing-Purging]: Path `/home/orangepi/Klipper-Adaptive-Meshing-Purging` does not exist', '[update_manager]: Failed to load extension Klippain-ShakeTune: Invalid path for option `path` in section [update_manager Klippain-ShakeTune]: Path `/home/orangepi/klippain_shaketune` does not exist', '[update_manager]: Failed to load extension klipper_auto_speed: Invalid path for option `path` in section [update_manager klipper_auto_speed]: Path `/home/orangepi/klipper_auto_speed` does not exist', '[update_manager]: Failed to load extension klipper-backup: Invalid path for option `path` in section [update_manager klipper-backup]: Path `/home/orangepi/klipper-backup` does not exist', "Unparsed config option 'repo: fluidd-core/fluidd' detected in section [update_manager fluidd].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/andrewmcgr/klipper_tmc_autotune.git' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'install_script: install.sh' detected in section [update_manager klipper_tmc_autotune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git' detected in section [update_manager Klipper-Adaptive-Meshing-Purging].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager Klipper-Adaptive-Meshing-Purging].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager Klipper-Adaptive-Meshing-Purging].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/Frix-x/klippain-shaketune.git' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'virtualenv: /home/orangepi/klippy-env' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'requirements: requirements.txt' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'system_dependencies: system-dependencies.json' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager Klippain-ShakeTune].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/anonoei/klipper_auto_speed.git' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'install_script: install.sh' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/Staubgeborener/klipper-backup.git' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: moonraker' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error."], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 20:51:04,729 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 20:51:04,730 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 20:51:04,730 [printer.py:log_counts()] - # Temperature devices: 0
+2025-04-17 20:51:04,730 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 20:51:04,731 [printer.py:log_counts()] - # Output pins: 0
+2025-04-17 20:51:04,731 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 20:51:04,731 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 20:51:04,981 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 20:51:04,983 [files.py:set_gcodes_path()] - Gcodes path: None
+2025-04-17 20:51:04,983 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 20:51:04,983 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 20:51:04,984 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 20:51:05,027 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:51:05,027 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:51:05,028 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:53:38,600 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 20:53:38,601 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 20:53:38,642 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:53:38,643 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:53:38,643 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 20:53:38,643 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:53:38,821 [KlippyWebsocket.py:on_close()] - 1001 Server Shutdown
+2025-04-17 20:53:38,821 [KlippyWebsocket.py:on_close()] - Moonraker Websocket Closed
+2025-04-17 20:53:38,824 [screen.py:websocket_disconnected()] - ### websocket_disconnected
+2025-04-17 20:53:38,824 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:53:38,928 [screen.py:connect_printer()] - Connecting to printer: Printer
+2025-04-17 20:53:38,929 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:53:38,942 [KlippyRest.py:_do_request()] - host=127.0.0.1, port=7125>>Max retries exceeded with url>>Failed to establish a new connection>>[Errno 111] Connection refused
+2025-04-17 20:53:38,943 [screen.py:connect_to_moonraker()] - Cannot get server info
+2025-04-17 20:53:42,422 [screen.py:init_klipper()] - Connection Lost Retrying
+2025-04-17 20:53:42,428 [KlippyRest.py:_do_request()] - host=127.0.0.1, port=7125>>Max retries exceeded with url>>Failed to establish a new connection>>[Errno 111] Connection refused
+2025-04-17 20:53:42,429 [screen.py:connect_to_moonraker()] - Cannot get server info
+2025-04-17 20:53:43,436 [KlippyWebsocket.py:connect()] - Attempting to connect
+2025-04-17 20:53:43,436 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2025-04-17 20:53:43,447 [_logging.py:info()] - Websocket connected
+2025-04-17 20:53:43,447 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2025-04-17 20:53:43,448 [screen.py:websocket_connected()] - ### websocket_connected
+2025-04-17 20:53:43,496 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2025-04-17 20:53:43,510 [screen.py:show_popup_message()] - warning: 
+Moonraker warnings:
+[update_manager]:
+ Failed to load extension fluidd:
+ Invalid path for option `path` in section [update_manager fluidd]:
+ Path `/home/orangepi/fluidd` does not exist
+[update_manager]:
+ Failed to load extension fluidd-config:
+ Invalid path for option `path` in section [update_manager fluidd-config]:
+ Path `/home/orangepi/fluidd-config` does not exist
+[update_manager]:
+ Failed to load extension klipper_auto_speed:
+ Invalid path for option `path` in section [update_manager klipper_auto_speed]:
+ Path `/home/orangepi/klipper_auto_speed` does not exist
+[update_manager]:
+ Failed to load extension klipper-backup:
+ Invalid path for option `path` in section [update_manager klipper-backup]:
+ Path `/home/orangepi/klipper-backup` does not exist
+Unparsed config option 'repo:
+ fluidd-core/fluidd' detected in section [update_manager fluidd].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'managed_services:
+ klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'origin:
+ https:
+//github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'primary_branch:
+ master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'origin:
+ https:
+//github.com/anonoei/klipper_auto_speed.git' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'primary_branch:
+ main' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'install_script:
+ install.sh' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'managed_services:
+ klipper' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'origin:
+ https:
+//github.com/Staubgeborener/klipper-backup.git' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'managed_services:
+ moonraker' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'primary_branch:
+ main' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+
+2025-04-17 20:53:43,527 [printer.py:configure_cameras()] - Cameras: []
+2025-04-17 20:53:43,537 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': ['[update_manager]: Failed to load extension fluidd: Invalid path for option `path` in section [update_manager fluidd]: Path `/home/orangepi/fluidd` does not exist', '[update_manager]: Failed to load extension fluidd-config: Invalid path for option `path` in section [update_manager fluidd-config]: Path `/home/orangepi/fluidd-config` does not exist', '[update_manager]: Failed to load extension klipper_auto_speed: Invalid path for option `path` in section [update_manager klipper_auto_speed]: Path `/home/orangepi/klipper_auto_speed` does not exist', '[update_manager]: Failed to load extension klipper-backup: Invalid path for option `path` in section [update_manager klipper-backup]: Path `/home/orangepi/klipper-backup` does not exist', "Unparsed config option 'repo: fluidd-core/fluidd' detected in section [update_manager fluidd].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/anonoei/klipper_auto_speed.git' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'install_script: install.sh' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/Staubgeborener/klipper-backup.git' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: moonraker' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error."], 'websocket_count': 1, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 20:53:43,666 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 20:53:43,666 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 20:53:43,666 [printer.py:log_counts()] - # Temperature devices: 0
+2025-04-17 20:53:43,666 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 20:53:43,666 [printer.py:log_counts()] - # Output pins: 0
+2025-04-17 20:53:43,666 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 20:53:43,666 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 20:53:43,916 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 20:53:43,917 [files.py:set_gcodes_path()] - Gcodes path: None
+2025-04-17 20:53:43,917 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 20:53:43,917 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 20:53:43,918 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 20:53:44,672 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:53:44,672 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:53:44,672 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:53:46,433 [KlippyWebsocket.py:connect()] - Already connected
+2025-04-17 20:53:50,438 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 20:53:50,438 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 20:53:50,467 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:53:50,467 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:53:50,467 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 20:53:50,468 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:53:54,446 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': ['[update_manager]: Failed to load extension fluidd: Invalid path for option `path` in section [update_manager fluidd]: Path `/home/orangepi/fluidd` does not exist', '[update_manager]: Failed to load extension fluidd-config: Invalid path for option `path` in section [update_manager fluidd-config]: Path `/home/orangepi/fluidd-config` does not exist', '[update_manager]: Failed to load extension klipper_auto_speed: Invalid path for option `path` in section [update_manager klipper_auto_speed]: Path `/home/orangepi/klipper_auto_speed` does not exist', '[update_manager]: Failed to load extension klipper-backup: Invalid path for option `path` in section [update_manager klipper-backup]: Path `/home/orangepi/klipper-backup` does not exist', "Unparsed config option 'repo: fluidd-core/fluidd' detected in section [update_manager fluidd].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/anonoei/klipper_auto_speed.git' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'install_script: install.sh' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: klipper' detected in section [update_manager klipper_auto_speed].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/Staubgeborener/klipper-backup.git' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'managed_services: moonraker' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: main' detected in section [update_manager klipper-backup].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error."], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 20:53:54,529 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 20:53:54,529 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 20:53:54,530 [printer.py:log_counts()] - # Temperature devices: 0
+2025-04-17 20:53:54,530 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 20:53:54,530 [printer.py:log_counts()] - # Output pins: 0
+2025-04-17 20:53:54,530 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 20:53:54,530 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 20:53:54,780 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 20:53:54,782 [files.py:set_gcodes_path()] - Gcodes path: None
+2025-04-17 20:53:54,782 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 20:53:54,782 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 20:53:54,783 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 20:53:54,818 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:53:54,818 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:53:54,819 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:56:35,158 [KlippyWebsocket.py:on_close()] - 1001 Server Shutdown
+2025-04-17 20:56:35,158 [KlippyWebsocket.py:on_close()] - Moonraker Websocket Closed
+2025-04-17 20:56:35,159 [screen.py:websocket_disconnected()] - ### websocket_disconnected
+2025-04-17 20:56:35,159 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:56:35,264 [screen.py:connect_printer()] - Connecting to printer: Printer
+2025-04-17 20:56:35,265 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:56:35,278 [KlippyRest.py:_do_request()] - host=127.0.0.1, port=7125>>Max retries exceeded with url>>Failed to establish a new connection>>[Errno 111] Connection refused
+2025-04-17 20:56:35,278 [screen.py:connect_to_moonraker()] - Cannot get server info
+2025-04-17 20:56:39,433 [KlippyWebsocket.py:connect()] - Attempting to connect
+2025-04-17 20:56:39,434 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2025-04-17 20:56:39,442 [_logging.py:info()] - Websocket connected
+2025-04-17 20:56:39,443 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2025-04-17 20:56:39,443 [screen.py:websocket_connected()] - ### websocket_connected
+2025-04-17 20:56:39,479 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2025-04-17 20:56:39,484 [screen.py:show_popup_message()] - warning: 
+Moonraker warnings:
+[update_manager]:
+ Failed to load extension fluidd-config:
+ Invalid path for option `path` in section [update_manager fluidd-config]:
+ Path `/home/orangepi/fluidd-config` does not exist
+Unparsed config option 'managed_services:
+ klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'origin:
+ https:
+//github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+Unparsed config option 'primary_branch:
+ master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.
+
+2025-04-17 20:56:39,499 [printer.py:configure_cameras()] - Cameras: []
+2025-04-17 20:56:39,509 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': ['[update_manager]: Failed to load extension fluidd-config: Invalid path for option `path` in section [update_manager fluidd-config]: Path `/home/orangepi/fluidd-config` does not exist', "Unparsed config option 'managed_services: klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error."], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 20:56:39,767 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 20:56:39,768 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 20:56:39,768 [printer.py:log_counts()] - # Temperature devices: 0
+2025-04-17 20:56:39,768 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 20:56:39,768 [printer.py:log_counts()] - # Output pins: 0
+2025-04-17 20:56:39,768 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 20:56:39,768 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 20:56:40,034 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 20:56:40,035 [files.py:set_gcodes_path()] - Gcodes path: None
+2025-04-17 20:56:40,035 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 20:56:40,035 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 20:56:40,035 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 20:56:40,358 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:56:40,358 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:56:40,358 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:57:07,162 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 20:57:07,162 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 20:57:07,184 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:57:07,185 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:57:07,185 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 20:57:07,185 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:57:11,444 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': ['[update_manager]: Failed to load extension fluidd-config: Invalid path for option `path` in section [update_manager fluidd-config]: Path `/home/orangepi/fluidd-config` does not exist', "Unparsed config option 'managed_services: klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error."], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 20:57:11,494 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 20:57:11,495 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 20:57:11,495 [printer.py:log_counts()] - # Temperature devices: 0
+2025-04-17 20:57:11,496 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 20:57:11,496 [printer.py:log_counts()] - # Output pins: 0
+2025-04-17 20:57:11,496 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 20:57:11,496 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 20:57:11,744 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 20:57:11,745 [files.py:set_gcodes_path()] - Gcodes path: None
+2025-04-17 20:57:11,746 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 20:57:11,746 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 20:57:11,746 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 20:57:11,781 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:57:11,781 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:57:11,782 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:57:28,552 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 20:57:28,552 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 20:57:28,595 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:57:28,596 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:57:28,596 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 20:57:28,596 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:57:32,444 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': ['[update_manager]: Failed to load extension fluidd-config: Invalid path for option `path` in section [update_manager fluidd-config]: Path `/home/orangepi/fluidd-config` does not exist', "Unparsed config option 'managed_services: klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error."], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 20:57:32,635 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 20:57:32,635 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 20:57:32,635 [printer.py:log_counts()] - # Temperature devices: 0
+2025-04-17 20:57:32,635 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 20:57:32,636 [printer.py:log_counts()] - # Output pins: 0
+2025-04-17 20:57:32,636 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 20:57:32,636 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 20:57:32,887 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 20:57:32,888 [files.py:set_gcodes_path()] - Gcodes path: None
+2025-04-17 20:57:32,889 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 20:57:32,889 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 20:57:32,889 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 20:57:32,940 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:57:32,941 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:57:32,941 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:57:43,825 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 20:57:43,825 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 20:57:43,876 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:57:43,876 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:57:43,877 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 20:57:43,877 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 20:57:48,452 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': ['[update_manager]: Failed to load extension fluidd-config: Invalid path for option `path` in section [update_manager fluidd-config]: Path `/home/orangepi/fluidd-config` does not exist', "Unparsed config option 'managed_services: klipper' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'origin: https://github.com/fluidd-core/fluidd-config.git' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error.", "Unparsed config option 'primary_branch: master' detected in section [update_manager fluidd-config].  This may be an option no longer available or could be the result of a module that failed to load.  In the future this will result in a startup error."], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 20:57:52,725 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 20:57:52,726 [printer.py:log_counts()] - # Extruders: 1
+2025-04-17 20:57:52,726 [printer.py:log_counts()] - # Temperature devices: 4
+2025-04-17 20:57:52,726 [printer.py:log_counts()] - # Fans: 2
+2025-04-17 20:57:52,726 [printer.py:log_counts()] - # Output pins: 2
+2025-04-17 20:57:52,726 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 20:57:52,726 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 20:57:52,977 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 20:57:52,979 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 20:57:52,979 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 20:57:52,980 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2025-04-17 20:57:52,980 [printer.py:change_state()] - Adding callback for state: startup
+2025-04-17 20:57:53,007 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:57:53,007 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:59:23,748 [printer.py:change_state()] - Changing state from 'startup' to 'error'
+2025-04-17 20:59:23,749 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 20:59:23,800 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 20:59:23,801 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 20:59:23,801 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:20:30,491 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2025-04-17 21:20:30,491 [functions.py:log_start()] - KlipperScreen Version: v0.4.5-57-g2916c9f
+2025-04-17 21:20:30,492 [functions.py:log_start()] - Python version: 3.11
+2025-04-17 21:20:30,720 [config.py:get_config_file_location()] - Passed config (-c): .
+2025-04-17 21:20:30,720 [config.py:__init__()] - Config path location: /home/orangepi/printer_data/config/KlipperScreen.conf
+2025-04-17 21:20:30,723 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/main_menu.conf']
+2025-04-17 21:20:30,735 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/splash_menu.conf']
+2025-04-17 21:20:30,757 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/print_menu.conf']
+2025-04-17 21:20:30,769 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/move_menu.conf']
+2025-04-17 21:20:30,784 [config.py:log_config()] - ===== Config File =====
+
+=======================
+2025-04-17 21:20:30,786 [config.py:__init__()] - ====== Saved Def ======
+
+[main]
+print_estimate_method = slicer
+screen_blanking = 1800
+screen_blanking_printing = 1800
+confirm_estop = True
+
+=======================
+2025-04-17 21:20:30,787 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_path": "",
+      "moonraker_ssl": null,
+      "moonraker_api_key": ""
+    }
+  }
+]
+2025-04-17 21:20:30,996 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2025-04-17 21:20:30,996 [config.py:install_language()] - Using lang en
+2025-04-17 21:20:31,022 [screen.py:__init__()] - Display for xset: :0
+2025-04-17 21:20:31,023 [screen.py:__init__()] - Screen 0: 1024x768
+2025-04-17 21:20:31,024 [screen.py:__init__()] - Monitors: 1 using number: 0
+2025-04-17 21:20:31,024 [screen.py:__init__()] - Wayland: False Display name: :0
+2025-04-17 21:20:31,027 [screen.py:__init__()] - Screen resolution: 1024x768
+2025-04-17 21:20:31,249 [KlippyGtk.py:__init__()] - Font size: 25.6 (medium)
+2025-04-17 21:20:31,841 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 21:20:32,122 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:20:32,123 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:20:32,123 [screen.py:initial_connection()] - Default printer: None
+2025-04-17 21:20:32,222 [screen.py:connect_printer()] - Connecting to printer: Printer
+2025-04-17 21:20:32,223 [screen.py:_remove_all_panels()] - Removing all panels
+2025-04-17 21:20:32,314 [screen.py:_load_panel()] - Loading panel: splash_screen
+2025-04-17 21:20:32,385 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2025-04-17 21:20:32,421 [KlippyWebsocket.py:connect()] - Attempting to connect
+2025-04-17 21:20:32,421 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2025-04-17 21:20:32,435 [_logging.py:info()] - Websocket connected
+2025-04-17 21:20:32,436 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2025-04-17 21:20:32,482 [screen.py:websocket_connected()] - ### websocket_connected
+2025-04-17 21:20:32,520 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2025-04-17 21:20:32,535 [printer.py:configure_cameras()] - Cameras: []
+2025-04-17 21:20:32,547 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:20:32,585 [KlippyRest.py:_do_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/printer/info
+2025-04-17 21:20:36,683 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:20:36,743 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 21:20:36,744 [printer.py:log_counts()] - # Extruders: 1
+2025-04-17 21:20:36,744 [printer.py:log_counts()] - # Temperature devices: 4
+2025-04-17 21:20:36,744 [printer.py:log_counts()] - # Fans: 2
+2025-04-17 21:20:36,744 [printer.py:log_counts()] - # Output pins: 2
+2025-04-17 21:20:36,745 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 21:20:36,745 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 21:20:37,008 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 21:20:37,009 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 21:20:37,010 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 21:20:37,011 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2025-04-17 21:20:37,011 [printer.py:change_state()] - Adding callback for state: startup
+2025-04-17 21:20:37,048 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:20:37,048 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:21:32,656 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 21:22:02,744 [printer.py:change_state()] - Changing state from 'startup' to 'error'
+2025-04-17 21:22:02,744 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 21:22:02,791 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:22:02,791 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:22:02,791 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:25:09,355 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2025-04-17 21:25:09,355 [functions.py:log_start()] - KlipperScreen Version: v0.4.5-57-g2916c9f
+2025-04-17 21:25:09,355 [functions.py:log_start()] - Python version: 3.11
+2025-04-17 21:25:09,576 [config.py:get_config_file_location()] - Passed config (-c): .
+2025-04-17 21:25:09,576 [config.py:__init__()] - Config path location: /home/orangepi/printer_data/config/KlipperScreen.conf
+2025-04-17 21:25:09,580 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/main_menu.conf']
+2025-04-17 21:25:09,592 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/splash_menu.conf']
+2025-04-17 21:25:09,597 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/print_menu.conf']
+2025-04-17 21:25:09,605 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/move_menu.conf']
+2025-04-17 21:25:09,623 [config.py:log_config()] - ===== Config File =====
+
+=======================
+2025-04-17 21:25:09,625 [config.py:__init__()] - ====== Saved Def ======
+
+[main]
+print_estimate_method = slicer
+screen_blanking = 1800
+screen_blanking_printing = 1800
+confirm_estop = True
+
+=======================
+2025-04-17 21:25:09,626 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_path": "",
+      "moonraker_ssl": null,
+      "moonraker_api_key": ""
+    }
+  }
+]
+2025-04-17 21:25:09,798 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2025-04-17 21:25:09,799 [config.py:install_language()] - Using lang en
+2025-04-17 21:25:09,825 [screen.py:__init__()] - Display for xset: :0
+2025-04-17 21:25:09,826 [screen.py:__init__()] - Screen 0: 1024x768
+2025-04-17 21:25:09,826 [screen.py:__init__()] - Monitors: 1 using number: 0
+2025-04-17 21:25:09,826 [screen.py:__init__()] - Wayland: False Display name: :0
+2025-04-17 21:25:09,829 [screen.py:__init__()] - Screen resolution: 1024x768
+2025-04-17 21:25:10,053 [KlippyGtk.py:__init__()] - Font size: 25.6 (medium)
+2025-04-17 21:25:10,644 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 21:25:10,929 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:25:10,930 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:25:10,931 [screen.py:initial_connection()] - Default printer: None
+2025-04-17 21:25:11,032 [screen.py:connect_printer()] - Connecting to printer: Printer
+2025-04-17 21:25:11,033 [screen.py:_remove_all_panels()] - Removing all panels
+2025-04-17 21:25:11,122 [screen.py:_load_panel()] - Loading panel: splash_screen
+2025-04-17 21:25:11,195 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2025-04-17 21:25:11,230 [KlippyWebsocket.py:connect()] - Attempting to connect
+2025-04-17 21:25:11,231 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2025-04-17 21:25:11,242 [_logging.py:info()] - Websocket connected
+2025-04-17 21:25:11,242 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2025-04-17 21:25:11,294 [screen.py:websocket_connected()] - ### websocket_connected
+2025-04-17 21:25:11,331 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2025-04-17 21:25:11,345 [printer.py:configure_cameras()] - Cameras: []
+2025-04-17 21:25:11,356 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:25:11,385 [KlippyRest.py:_do_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/printer/info
+2025-04-17 21:25:15,708 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:25:15,748 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 21:25:15,748 [printer.py:log_counts()] - # Extruders: 1
+2025-04-17 21:25:15,748 [printer.py:log_counts()] - # Temperature devices: 4
+2025-04-17 21:25:15,748 [printer.py:log_counts()] - # Fans: 2
+2025-04-17 21:25:15,748 [printer.py:log_counts()] - # Output pins: 2
+2025-04-17 21:25:15,748 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 21:25:15,748 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 21:25:15,993 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 21:25:15,994 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 21:25:15,995 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 21:25:15,995 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2025-04-17 21:25:15,996 [printer.py:change_state()] - Adding callback for state: startup
+2025-04-17 21:25:16,018 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:25:16,019 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:26:10,696 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 21:28:12,073 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2025-04-17 21:28:12,074 [functions.py:log_start()] - KlipperScreen Version: v0.4.5-57-g2916c9f
+2025-04-17 21:28:12,074 [functions.py:log_start()] - Python version: 3.11
+2025-04-17 21:28:12,300 [config.py:get_config_file_location()] - Passed config (-c): .
+2025-04-17 21:28:12,301 [config.py:__init__()] - Config path location: /home/orangepi/printer_data/config/KlipperScreen.conf
+2025-04-17 21:28:12,304 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/main_menu.conf']
+2025-04-17 21:28:12,316 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/splash_menu.conf']
+2025-04-17 21:28:12,322 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/print_menu.conf']
+2025-04-17 21:28:12,332 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/move_menu.conf']
+2025-04-17 21:28:12,347 [config.py:log_config()] - ===== Config File =====
+
+=======================
+2025-04-17 21:28:12,350 [config.py:__init__()] - ====== Saved Def ======
+
+[main]
+print_estimate_method = slicer
+screen_blanking = 1800
+screen_blanking_printing = 1800
+confirm_estop = True
+
+=======================
+2025-04-17 21:28:12,351 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_path": "",
+      "moonraker_ssl": null,
+      "moonraker_api_key": ""
+    }
+  }
+]
+2025-04-17 21:28:12,558 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2025-04-17 21:28:12,559 [config.py:install_language()] - Using lang en
+2025-04-17 21:28:12,597 [screen.py:__init__()] - Display for xset: :0
+2025-04-17 21:28:12,600 [screen.py:__init__()] - Screen 0: 1024x768
+2025-04-17 21:28:12,601 [screen.py:__init__()] - Monitors: 1 using number: 0
+2025-04-17 21:28:12,602 [screen.py:__init__()] - Wayland: False Display name: :0
+2025-04-17 21:28:12,605 [screen.py:__init__()] - Screen resolution: 1024x768
+2025-04-17 21:28:12,847 [KlippyGtk.py:__init__()] - Font size: 25.6 (medium)
+2025-04-17 21:28:13,387 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 21:28:13,650 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:28:13,650 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:28:13,651 [screen.py:initial_connection()] - Default printer: None
+2025-04-17 21:28:13,747 [screen.py:connect_printer()] - Connecting to printer: Printer
+2025-04-17 21:28:13,747 [screen.py:_remove_all_panels()] - Removing all panels
+2025-04-17 21:28:13,833 [screen.py:_load_panel()] - Loading panel: splash_screen
+2025-04-17 21:28:13,900 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2025-04-17 21:28:13,939 [KlippyWebsocket.py:connect()] - Attempting to connect
+2025-04-17 21:28:13,939 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2025-04-17 21:28:13,950 [_logging.py:info()] - Websocket connected
+2025-04-17 21:28:13,950 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2025-04-17 21:28:13,997 [screen.py:websocket_connected()] - ### websocket_connected
+2025-04-17 21:28:14,034 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2025-04-17 21:28:14,047 [printer.py:configure_cameras()] - Cameras: []
+2025-04-17 21:28:14,057 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:28:14,323 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 21:28:14,323 [printer.py:log_counts()] - # Extruders: 1
+2025-04-17 21:28:14,324 [printer.py:log_counts()] - # Temperature devices: 1
+2025-04-17 21:28:14,324 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 21:28:14,324 [printer.py:log_counts()] - # Output pins: 1
+2025-04-17 21:28:14,324 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 21:28:14,325 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 21:28:14,573 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 21:28:14,575 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 21:28:14,575 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 21:28:14,576 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 21:28:14,576 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 21:28:14,612 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:28:14,612 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:28:14,613 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:28:44,728 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 21:28:44,729 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 21:28:44,779 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:28:44,779 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:28:44,780 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 21:28:44,780 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:28:49,317 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:28:49,425 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 21:28:49,426 [printer.py:log_counts()] - # Extruders: 1
+2025-04-17 21:28:49,426 [printer.py:log_counts()] - # Temperature devices: 1
+2025-04-17 21:28:49,426 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 21:28:49,427 [printer.py:log_counts()] - # Output pins: 1
+2025-04-17 21:28:49,427 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 21:28:49,427 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 21:28:49,670 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 21:28:49,671 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 21:28:49,671 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 21:28:49,672 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 21:28:49,672 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 21:28:49,695 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:28:49,695 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:28:49,696 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:29:14,291 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 21:30:22,392 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 21:30:22,392 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 21:30:22,444 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:30:22,445 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:30:22,445 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 21:30:22,446 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:30:26,301 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:30:26,536 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 21:30:26,536 [printer.py:log_counts()] - # Extruders: 1
+2025-04-17 21:30:26,537 [printer.py:log_counts()] - # Temperature devices: 1
+2025-04-17 21:30:26,537 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 21:30:26,537 [printer.py:log_counts()] - # Output pins: 1
+2025-04-17 21:30:26,537 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 21:30:26,537 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 21:30:26,786 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 21:30:26,787 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 21:30:26,787 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 21:30:26,788 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 21:30:26,788 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 21:30:26,811 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:30:26,811 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:30:26,811 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:31:07,042 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 21:31:07,042 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 21:31:07,093 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:31:07,094 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:31:07,094 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 21:31:07,094 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:31:11,315 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:31:11,396 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 21:31:11,397 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 21:31:11,397 [printer.py:log_counts()] - # Temperature devices: 1
+2025-04-17 21:31:11,397 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 21:31:11,398 [printer.py:log_counts()] - # Output pins: 1
+2025-04-17 21:31:11,398 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 21:31:11,398 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 21:31:11,650 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 21:31:11,651 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 21:31:11,652 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 21:31:11,652 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 21:31:11,653 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 21:31:11,696 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:31:11,697 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:31:11,697 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:31:37,756 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 21:31:37,756 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 21:31:37,808 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:31:37,809 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:31:37,809 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 21:31:37,809 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:31:42,315 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:31:42,372 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 21:31:42,372 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 21:31:42,372 [printer.py:log_counts()] - # Temperature devices: 1
+2025-04-17 21:31:42,373 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 21:31:42,373 [printer.py:log_counts()] - # Output pins: 1
+2025-04-17 21:31:42,373 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 21:31:42,374 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 21:31:42,618 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 21:31:42,619 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 21:31:42,620 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 21:31:42,620 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 21:31:42,620 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 21:31:42,644 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:31:42,645 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:31:42,645 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:32:20,917 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 21:32:20,918 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 21:32:20,969 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:32:20,970 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:32:20,970 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 21:32:20,970 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:32:25,314 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:32:25,527 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 21:32:25,527 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 21:32:25,528 [printer.py:log_counts()] - # Temperature devices: 1
+2025-04-17 21:32:25,528 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 21:32:25,528 [printer.py:log_counts()] - # Output pins: 1
+2025-04-17 21:32:25,528 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 21:32:25,529 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 21:32:25,776 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 21:32:25,778 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 21:32:25,778 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 21:32:25,779 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 21:32:25,779 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 21:32:25,814 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:32:25,815 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:32:25,815 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:33:57,925 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2025-04-17 21:33:57,926 [printer.py:change_state()] - Adding callback for state: disconnected
+2025-04-17 21:33:57,977 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:33:57,978 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:33:57,978 [screen.py:state_disconnected()] - ### Going to disconnected
+2025-04-17 21:33:57,979 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 21:34:01,843 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:34:02,113 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 21:34:02,113 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 21:34:02,113 [printer.py:log_counts()] - # Temperature devices: 1
+2025-04-17 21:34:02,113 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 21:34:02,113 [printer.py:log_counts()] - # Output pins: 1
+2025-04-17 21:34:02,113 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 21:34:02,113 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 21:34:02,340 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 21:34:02,341 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 21:34:02,342 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 21:34:02,342 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2025-04-17 21:34:02,342 [printer.py:change_state()] - Adding callback for state: ready
+2025-04-17 21:34:02,355 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 21:34:02,589 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 21:34:02,589 [printer.py:log_counts()] - # Extruders: 0
+2025-04-17 21:34:02,589 [printer.py:log_counts()] - # Temperature devices: 1
+2025-04-17 21:34:02,589 [printer.py:log_counts()] - # Fans: 0
+2025-04-17 21:34:02,589 [printer.py:log_counts()] - # Output pins: 1
+2025-04-17 21:34:02,590 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 21:34:02,590 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 21:34:02,840 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 21:34:02,842 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 21:34:02,842 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 21:34:02,865 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 21:34:02,865 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 21:34:02,865 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2025-04-17 21:34:02,868 [screen.py:_remove_all_panels()] - Removing all panels
+2025-04-17 21:34:02,957 [screen.py:_load_panel()] - Loading panel: main_menu
+2025-04-17 21:34:03,138 [main_menu.py:__init__()] - ### Making MainMenu
+2025-04-17 21:34:03,148 [main_menu.py:add_device()] - Adding device: heater_bed
+2025-04-17 21:34:03,168 [menu.py:arrangeMenuItems()] - X > extrude
+2025-04-17 21:34:03,172 [menu.py:arrangeMenuItems()] - X > print
+2025-04-17 21:34:03,189 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2025-04-17 21:34:03,205 [printer.py:init_temp_store()] - Temp store: ['heater_bed']
+2025-04-17 21:34:03,218 [screen.py:init_tempstore()] - Temperature store size: 1200
+2025-04-17 23:47:32,522 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2025-04-17 23:47:32,523 [functions.py:log_start()] - KlipperScreen Version: v0.4.5-57-g2916c9f
+2025-04-17 23:47:32,523 [functions.py:log_start()] - Python version: 3.11
+2025-04-17 23:47:32,720 [config.py:get_config_file_location()] - Passed config (-c): .
+2025-04-17 23:47:32,721 [config.py:__init__()] - Config path location: /home/orangepi/printer_data/config/KlipperScreen.conf
+2025-04-17 23:47:32,723 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/main_menu.conf']
+2025-04-17 23:47:32,735 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/splash_menu.conf']
+2025-04-17 23:47:32,739 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/print_menu.conf']
+2025-04-17 23:47:32,746 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/move_menu.conf']
+2025-04-17 23:47:32,756 [config.py:log_config()] - ===== Config File =====
+
+=======================
+2025-04-17 23:47:32,757 [config.py:__init__()] - ====== Saved Def ======
+
+[main]
+print_estimate_method = slicer
+screen_blanking = 1800
+screen_blanking_printing = 1800
+confirm_estop = True
+
+=======================
+2025-04-17 23:47:32,758 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_path": "",
+      "moonraker_ssl": null,
+      "moonraker_api_key": ""
+    }
+  }
+]
+2025-04-17 23:47:32,910 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2025-04-17 23:47:32,910 [config.py:install_language()] - Using lang en
+2025-04-17 23:47:32,934 [screen.py:__init__()] - Display for xset: :0
+2025-04-17 23:47:32,935 [screen.py:__init__()] - Screen 0: 1024x768
+2025-04-17 23:47:32,935 [screen.py:__init__()] - Monitors: 1 using number: 0
+2025-04-17 23:47:32,936 [screen.py:__init__()] - Wayland: False Display name: :0
+2025-04-17 23:47:32,937 [screen.py:__init__()] - Screen resolution: 1024x768
+2025-04-17 23:47:33,147 [KlippyGtk.py:__init__()] - Font size: 25.6 (medium)
+2025-04-17 23:47:33,797 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-17 23:47:34,132 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 23:47:34,132 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 23:47:34,133 [screen.py:initial_connection()] - Default printer: None
+2025-04-17 23:47:34,236 [screen.py:connect_printer()] - Connecting to printer: Printer
+2025-04-17 23:47:34,236 [screen.py:_remove_all_panels()] - Removing all panels
+2025-04-17 23:47:34,322 [screen.py:_load_panel()] - Loading panel: splash_screen
+2025-04-17 23:47:34,388 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2025-04-17 23:47:34,421 [KlippyWebsocket.py:connect()] - Attempting to connect
+2025-04-17 23:47:34,422 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2025-04-17 23:47:34,433 [_logging.py:info()] - Websocket connected
+2025-04-17 23:47:34,433 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2025-04-17 23:47:34,480 [screen.py:websocket_connected()] - ### websocket_connected
+2025-04-17 23:47:34,516 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2025-04-17 23:47:34,530 [printer.py:configure_cameras()] - Cameras: []
+2025-04-17 23:47:34,540 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-17 23:47:34,703 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-17 23:47:34,703 [printer.py:log_counts()] - # Extruders: 1
+2025-04-17 23:47:34,703 [printer.py:log_counts()] - # Temperature devices: 1
+2025-04-17 23:47:34,704 [printer.py:log_counts()] - # Fans: 1
+2025-04-17 23:47:34,704 [printer.py:log_counts()] - # Output pins: 1
+2025-04-17 23:47:34,704 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-17 23:47:34,704 [printer.py:log_counts()] - # Leds: 0
+2025-04-17 23:47:34,962 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-17 23:47:34,964 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-17 23:47:34,964 [screen.py:init_klipper()] - Printer initialized
+2025-04-17 23:47:34,965 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-17 23:47:34,965 [printer.py:change_state()] - Adding callback for state: error
+2025-04-17 23:47:35,008 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-17 23:47:35,009 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-17 23:47:35,009 [screen.py:show_panel()] - Panel is already is in view
+2025-04-17 23:48:34,697 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-18 00:17:35,700 [screensaver.py:show()] - Showing Screensaver
+2025-04-18 00:17:25,961 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2025-04-18 00:17:25,961 [functions.py:log_start()] - KlipperScreen Version: v0.4.5-57-g2916c9f
+2025-04-18 00:17:25,962 [functions.py:log_start()] - Python version: 3.11
+2025-04-18 00:17:26,160 [config.py:get_config_file_location()] - Passed config (-c): .
+2025-04-18 00:17:26,160 [config.py:__init__()] - Config path location: /home/orangepi/printer_data/config/KlipperScreen.conf
+2025-04-18 00:17:26,163 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/main_menu.conf']
+2025-04-18 00:17:26,176 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/splash_menu.conf']
+2025-04-18 00:17:26,180 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/print_menu.conf']
+2025-04-18 00:17:26,188 [config.py:_include_config()] - Parsing files: ['/home/orangepi/KlipperScreen/config/move_menu.conf']
+2025-04-18 00:17:26,197 [config.py:log_config()] - ===== Config File =====
+
+=======================
+2025-04-18 00:17:26,199 [config.py:__init__()] - ====== Saved Def ======
+
+[main]
+print_estimate_method = slicer
+screen_blanking = 1800
+screen_blanking_printing = 1800
+confirm_estop = True
+
+=======================
+2025-04-18 00:17:26,199 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_path": "",
+      "moonraker_ssl": null,
+      "moonraker_api_key": ""
+    }
+  }
+]
+2025-04-18 00:17:26,349 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2025-04-18 00:17:26,349 [config.py:install_language()] - Using lang en
+2025-04-18 00:17:26,374 [screen.py:__init__()] - Display for xset: :0
+2025-04-18 00:17:26,375 [screen.py:__init__()] - Screen 0: 1024x768
+2025-04-18 00:17:26,375 [screen.py:__init__()] - Monitors: 1 using number: 0
+2025-04-18 00:17:26,376 [screen.py:__init__()] - Wayland: False Display name: :0
+2025-04-18 00:17:26,378 [screen.py:__init__()] - Screen resolution: 1024x768
+2025-04-18 00:17:26,586 [KlippyGtk.py:__init__()] - Font size: 25.6 (medium)
+2025-04-18 00:17:27,271 [base_panel.py:battery_percentage()] - Battery information not available.
+2025-04-18 00:17:27,581 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-18 00:17:27,582 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-18 00:17:27,582 [screen.py:initial_connection()] - Default printer: None
+2025-04-18 00:17:27,680 [screen.py:connect_printer()] - Connecting to printer: Printer
+2025-04-18 00:17:27,681 [screen.py:_remove_all_panels()] - Removing all panels
+2025-04-18 00:17:27,767 [screen.py:_load_panel()] - Loading panel: splash_screen
+2025-04-18 00:17:27,834 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2025-04-18 00:17:27,870 [KlippyWebsocket.py:connect()] - Attempting to connect
+2025-04-18 00:17:27,871 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2025-04-18 00:17:27,883 [_logging.py:info()] - Websocket connected
+2025-04-18 00:17:27,883 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2025-04-18 00:17:27,928 [screen.py:websocket_connected()] - ### websocket_connected
+2025-04-18 00:17:27,964 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2025-04-18 00:17:27,978 [printer.py:configure_cameras()] - Cameras: []
+2025-04-18 00:17:27,989 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.9.3-72-g7cdcca3', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2025-04-18 00:17:28,052 [printer.py:log_counts()] - Klipper version: v0.13.0-33-g413ff19e-dirty
+2025-04-18 00:17:28,052 [printer.py:log_counts()] - # Extruders: 1
+2025-04-18 00:17:28,052 [printer.py:log_counts()] - # Temperature devices: 1
+2025-04-18 00:17:28,053 [printer.py:log_counts()] - # Fans: 1
+2025-04-18 00:17:28,053 [printer.py:log_counts()] - # Output pins: 1
+2025-04-18 00:17:28,053 [printer.py:log_counts()] - # PWM tools: 0
+2025-04-18 00:17:28,053 [printer.py:log_counts()] - # Leds: 0
+2025-04-18 00:17:28,304 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2025-04-18 00:17:28,306 [files.py:set_gcodes_path()] - Gcodes path: /home/orangepi/printer_data/gcodes
+2025-04-18 00:17:28,306 [screen.py:init_klipper()] - Printer initialized
+2025-04-18 00:17:28,306 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2025-04-18 00:17:28,307 [printer.py:change_state()] - Adding callback for state: error
+2025-04-18 00:17:28,329 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 1800
+2025-04-18 00:17:28,329 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 1800 DPMS:True
+2025-04-18 00:17:28,330 [screen.py:show_panel()] - Panel is already is in view
+2025-04-18 00:18:27,698 [base_panel.py:battery_percentage()] - Battery information not available.
